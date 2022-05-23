@@ -25,4 +25,4 @@ $netadapter | Set-NetIPInterface -DHCP Disabled
 ## Configure the IP address and default gateway for "VM Network" in Env
 $netadapter | New-NetIPAddress -AddressFamily IPv4 -IPAddress 10.59.93.15 -PrefixLength 24 -Type Unicast -DefaultGateway 10.59.93.1
 ## Configure the DNS servers
-Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses ("10.30.15.200","10.30.55.200”)
+Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses ("10.30.15.200","10.30.55.200")
