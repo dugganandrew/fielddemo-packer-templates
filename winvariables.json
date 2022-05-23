@@ -19,6 +19,6 @@
 
     "windows_2016_vm_name": "packer-windows2016",
     "windows_2016_iso": "[VxRail-Virtual-SAN-Datastore] iso/en_windows_server_2016_vl_x64_dvd_11636701.iso",
-    "windows_2016_checksum": "47919CE8B4993F531CA1FA3F85941F4A72B47EBAA4D3A321FECF83CA9D17E6B8",
+    "windows_2016_checksum": "47919CE8B4993F531CA1FA3F85941F4A72B47EBAA4D3A321FECF83CA9D17E6B8"
 
 }
