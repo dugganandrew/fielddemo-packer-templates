@@ -1,0 +1,24 @@
+{
+    "vcenter_server": "{{ env `VCSERVER`}}",
+    "vcenter_username": "{{ env `VCUSER`}}",
+    "vcenter_password": "{{ env `VCPASS`}}",
+    "vcenter_datastore": "{{ env `VCDATASTORE`}}",
+    "vcenter_folder": "{{ env `VCFOLDER`}}",
+    "vcenter_cluster": "{{ env `VCCLUSTER`}}",
+    "vcenter_network": "{{ env `VCNETWORK`}}",
+
+    "buildtime": "{{ env `BUILDTIME`}}",
+
+    "ssh_username": "{{ env `SSHUSER`}}",
+    "ssh_password": "{{ env `SSHPASS`}}",
+
+    "winrm_username": "Administrator",
+    "winrm_password": "{{ env `SSHPASS`}}",
+
+    "http_server": "https://github.com/dugganandrew/fielddemo-packer-templates/master/config",
+
+    "windows_2016_vm_name": "packer-windows2016",
+    "windows_2016_iso": "[VxRail-Virtual-SAN-Datastore] iso/en_windows_server_2016_vl_x64_dvd_11636701.iso",
+    "windows_2016_checksum": "47919CE8B4993F531CA1FA3F85941F4A72B47EBAA4D3A321FECF83CA9D17E6B8",
+
+}
