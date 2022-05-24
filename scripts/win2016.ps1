@@ -4,10 +4,15 @@
 # @source https://github.com/virtualhobbit
 $ErrorActionPreference = "Stop"
 
+start-sleep -Seconds 60
+
 # Switch network connection to private mode
 # Required for WinRM firewall rules
 $profile = Get-NetConnectionProfile
 Set-NetConnectionProfile -Name $profile.Name -NetworkCategory Private
+
+#Disable Windows Firewall
+Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 
 # Enable WinRM service
 winrm quickconfig -quiet
