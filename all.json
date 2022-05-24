@@ -42,7 +42,9 @@
                 "{{ template_dir }}/scripts/win_vmtools.cmd",
                 "{{ template_dir }}/scripts/win2016.ps1"
             ],
-            "remove_cdrom": "true"
+            "remove_cdrom": "true",
+            "boot_wait": "15m",
+            "ip_wait_address": "10.59.93.0/24"
         }
     ],
     "provisioners": [
