@@ -47,18 +47,7 @@
             "ip_wait_address": "10.59.93.0/24"
         }
     ],
-    "provisioners": [
-        {
-            "type":                 "windows-update",
-            "search_criteria":      "IsInstalled=0",
-            "filters": [
-                                    "exclude:$_.Title -like '*Preview*'",
-                                    "exclude:$_.InstallationBehavior.CanRequestUserInput",
-                                    "include:$true"
-            ],
-            "restart_timeout":      "120m"
-        }
-    ],
+    
     "sensitive-variables": [
         "vcenter_password",
         "ssh_password",
