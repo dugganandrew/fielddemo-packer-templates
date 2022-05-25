@@ -4,7 +4,7 @@
 # @source https://github.com/virtualhobbit
 $ErrorActionPreference = "Stop"
 
-start-sleep -Seconds 60
+start-sleep -Seconds 30
 
 # Switch network connection to private mode
 # Required for WinRM firewall rules
